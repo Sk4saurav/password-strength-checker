@@ -7,7 +7,7 @@
 ![alt text](image.png)
 
 ## 🚀 Live Demo
-[**Click here to view the live project**](#) *(Add your GitHub Pages link here)*
+[![Live Demo](https://img.shields.io/badge/DEMO-View_Live_Project-success?style=for-the-badge&logo=vercel)](https://password-strength-checker-iota.vercel.app/)
 
 ---
 
@@ -42,12 +42,3 @@ This isn't just a simple regex checker. This project combines multiple security 
 
 ---
 
-## 📂 Project Structure
-
-```bash
-password-strength-checker/
-│
-├── index.html        # Main application structure (Bootstrap grid)
-├── style.css         # Custom styling, animations, and Dark Mode logic
-├── script.js         # Core logic: Entropy calc, Event listeners, Generator
-└── README.md         # Project documentation
