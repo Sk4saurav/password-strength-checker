@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Password Strength Checker</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Password Strength Checker</h1>
+
+        <div class="form-group">
+            <label for="password"><b>Password:</b></label>
+
+            <!-- Password input with eye icon -->
+            <div class="input-group">
+                <input type="password" class="form-control" id="password">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="toggleEye" style="cursor:pointer;">👁</span>
+                </div>
+            </div>
+
+            <!-- Strength progress bar -->
+            <div id="password-strength" class="progress mt-2">
+                <div id="progressBar"
+                     class="progress-bar bg-danger"
+                     role="progressbar"
+                     style="width: 0%"
+                     aria-valuenow="0"
+                     aria-valuemin="0"
+                     aria-valuemax="100">
+                </div>
+            </div>
+
+            <!-- Strength text -->
+            <p class="mt-2">
+                <b>Strength:</b> <span id="strengthText">Very Weak</span>
+            </p>
+
+            <!-- Entropy and zxcvbn -->
+            <p>
+                <b>Entropy:</b> <span id="entropy">0</span> bits
+            </p>
+            <p>
+                <b>zxcvbn Score:</b> <span id="zxscore">0</span> / 4
+            </p>
+
+            <!-- Password conditions -->
+            <div id="password-conditions" class="mt-3">
+                <ul class="pl-3">
+                    <li><div id="lower" class="password-condition">At least 1 lowercase letter</div></li>
+                    <li><div id="upper" class="password-condition">At least 1 uppercase letter</div></li>
+                    <li><div id="digit" class="password-condition">At least 1 digit</div></li>
+                    <li><div id="special" class="password-condition">At least 1 special character</div></li>
+                    <li><div id="len8" class="password-condition">At least 8 characters long</div></li>
+                    <li><div id="len12" class="password-condition">At least 12 characters long</div></li>
+                </ul>
+            </div>
+
+            <!-- Dark mode button -->
+            <div class="d-flex justify-content-center gap-2 mt-3">
+    <button id="darkMode" class="btn btn-dark">
+        Dark Mode
+    </button>
+
+    <button id="generatePassword" class="btn btn-primary">
+        Generate Strong Password
+    </button>
+</div>
+
+
+    <!-- JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- zxcvbn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

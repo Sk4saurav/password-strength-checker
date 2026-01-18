@@ -1,0 +1,122 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+body {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+/* ================================
+   PROGRESS BAR
+================================ */
+#password-strength {
+    height: 10px;
+    border-radius: 5px;
+}
+
+#password-strength .progress-bar {
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+#password-strength .bg-danger {
+    background-color: #dc3545;
+}
+
+#password-strength .bg-warning {
+    background-color: #ffc107;
+}
+
+#password-strength .bg-success {
+    background-color: #28a745;
+}
+
+/* ================================
+   PASSWORD CONDITIONS
+================================ */
+#password-conditions ul {
+    padding-left: 0;
+}
+
+#password-conditions li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.password-condition {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+/* Condition met */
+.password-condition.met {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+/* Condition not met */
+.password-condition.unmet {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* ================================
+   TEXT STYLES
+================================ */
+p {
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+/* ================================
+   EYE ICON
+================================ */
+#toggleEye {
+    user-select: none;
+}
+
+/* ================================
+   DARK MODE
+================================ */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark .form-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark .password-condition {
+    background-color: #2a2a2a;
+    color: #bbbbbb;
+}
+
+body.dark .password-condition.met {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+body.dark .password-condition.unmet {
+    background-color: #842029;
+    color: #ffffff;
+}
+
+body.dark .progress {
+    background-color: #333;
+}
+
+body.dark .btn-dark {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
